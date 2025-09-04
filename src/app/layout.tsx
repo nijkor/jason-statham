@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
         className={`${geistSans.className} antialiased`}
       >
         <Analytics />
+        <SpeedInsights />
         <div className="h-screen flex flex-col justify-center items-center gap-5">
           {children}
         </div>

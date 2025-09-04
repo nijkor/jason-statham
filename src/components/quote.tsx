@@ -6,8 +6,6 @@ import {
 
 import { quotes } from "@/data/quotes"
 
-import { ClockIcon, QuoteIcon } from "lucide-react"
-
 export default function Quote() {
     const quote = quotes[Math.floor(Math.random() * quotes.length)]
     const time = `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`
